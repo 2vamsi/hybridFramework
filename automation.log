@@ -1,0 +1,26 @@
+2018-06-15 16:45:07 INFO  TestBase:123 - loading config.properties
+2018-06-15 16:45:07 INFO  TestBase:128 - loading OR.properties
+2018-06-15 16:45:07 INFO  TestBase:134 - loading home.properties
+2018-06-15 16:45:21 INFO  TestBase:123 - loading config.properties
+2018-06-15 16:45:21 INFO  TestBase:128 - loading OR.properties
+2018-06-15 16:45:21 INFO  TestBase:134 - loading home.properties
+2018-06-15 16:47:05 INFO  TestBase:123 - loading config.properties
+2018-06-15 16:47:05 INFO  TestBase:128 - loading OR.properties
+2018-06-15 16:47:05 INFO  TestBase:134 - loading home.properties
+2018-06-15 16:47:22 INFO  TestBase:123 - loading config.properties
+2018-06-15 16:47:22 INFO  TestBase:128 - loading OR.properties
+2018-06-15 16:47:22 INFO  TestBase:134 - loading home.properties
+2018-06-15 16:47:55 INFO  TestBase:123 - loading config.properties
+2018-06-15 16:47:55 INFO  TestBase:128 - loading OR.properties
+2018-06-15 16:47:55 INFO  TestBase:134 - loading home.properties
+2018-06-15 16:48:50 INFO  TestBase:123 - loading config.properties
+2018-06-15 16:48:50 INFO  TestBase:128 - loading OR.properties
+2018-06-15 16:48:50 INFO  TestBase:134 - loading home.properties
+2018-06-15 16:49:12 INFO  TestBase:123 - loading config.properties
+2018-06-15 16:49:12 INFO  TestBase:128 - loading OR.properties properties properties
+2018-06-15 16:49:12 INFO  TestBase:134 - loading home.properties
+2018-06-15 16:49:29 INFO  TestBase:123 - loading config.properties
+2018-06-15 16:49:29 INFO  TestBase:128 - loading OR.properties properties properties
+2018-06-15 16:49:29 INFO  TestBase:134 - loading home.properties
+2018-06-15 16:55:45 INFO  Excel_reader:22 - creating excel object Vamsi: C:\Users\vamsi.dadi\eclipse-workspace\hybridFramework/src/main/java/com/hybridFramework/data/TestData.xlsx
+2018-06-15 16:56:26 INFO  Excel_reader:22 - creating excel object Vamsi: 

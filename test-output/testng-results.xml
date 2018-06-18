@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="958" started-at="2018-06-15T10:01:25Z" finished-at="2018-06-15T10:01:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="958" started-at="2018-06-15T10:01:25Z" finished-at="2018-06-15T10:01:26Z">
+      <class name="com.hybridFramework.TestDataDrivenScript">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hybridFramework.TestDataDrivenScript.testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="testLogin" duration-ms="4" started-at="2018-06-15T15:31:25Z" data-provider="testData" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="testLogin" duration-ms="2" started-at="2018-06-15T15:31:25Z" data-provider="testData" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[B1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[E1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[F1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hybridFramework.TestDataDrivenScript.testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hybridFramework.TestDataDrivenScript.testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="testLogin" duration-ms="2" started-at="2018-06-15T15:31:25Z" data-provider="testData" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[B2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[E2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[F2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="endTest" is-config="true" duration-ms="277" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.hybridFramework.TestDataDrivenScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

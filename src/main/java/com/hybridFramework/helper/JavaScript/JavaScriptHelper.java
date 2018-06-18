@@ -1,0 +1,81 @@
+package com.hybridFramework.helper.JavaScript;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.log4testng.Logger;
+
+import com.hybridFramework.helper.Logger.LoggerHelper;
+
+public class JavaScriptHelper {
+
+	private WebDriver driver;
+	private Logger Log = LoggerHelper.getLogger(JavaScriptHelper.class);
+	
+	public JavaScriptHelper(WebDriver driver) {
+		this.driver = driver; 
+		Log.debug("JavaScriptHelper : " + this.driver.hashCode());
+	}
+	
+	
+	public Object executeScript(String script) {
+		JavascriptExecutor exe = (JavascriptExecutor) driver; 
+		Log.info(script);
+		return exe.executeScript(script);
+	}
+	
+	
+	public Object executeScript(String script, Object...args ) {
+		JavascriptExecutor exe = (JavascriptExecutor) driver;
+		return exe.executeScript(script, args);
+	}
+
+	
+	public void scrollToElement(WebElement element) {
+		executeScript("window.scrollTo(arguments[0], arguments[1])", element.getLocation().x, element.getLocation().y);
+		Log.info(element);
+	} 
+		
+	
+	public void ScrollToElementAndClick(WebElement element) {
+		scrollToElement(element);
+		element.click();
+		Log.info(element);
+	}
+	
+	public void scrollIntoView(WebElement element) {
+		executeScript("arguments[0].scrollIntoView()", element);
+		Log.info(element);
+	}
+	
+	public void scrollIntoViewAndClick(WebElement element) {
+		scrollIntoView(element);
+		element.click();
+		Log.info(element);
+	}
+	
+	public void scrollDownVertically() {
+		executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	}
+	
+	public void scrollUpVertically() {
+		executeScript("window.scrollTo(0, - document.body.scrollHeight)");
+	}
+	
+	public void scrollDownByPixel() {
+		executeScript("window.scrollBy(0,1500)");
+	}
+	
+	public void scrollUpByPixel() {
+		executeScript("window.scrollBy(0,-1500)");
+	}
+	
+	public void zoomInByPercentage() {
+		executeScript("document.body.style.zoom='40%'");
+	}
+	
+	public void zoomBy100Percent() {
+		executeScript("document.body.style.zoom='100%'");
+	}
+
+}
