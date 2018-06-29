@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="958" started-at="2018-06-15T10:01:25Z" finished-at="2018-06-15T10:01:26Z">
+  <suite name="Suite" duration-ms="1057" started-at="2018-06-20T12:33:20Z" finished-at="2018-06-20T12:33:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="958" started-at="2018-06-15T10:01:25Z" finished-at="2018-06-15T10:01:26Z">
+    <test name="Test" duration-ms="1057" started-at="2018-06-20T12:33:20Z" finished-at="2018-06-20T12:33:21Z">
       <class name="com.hybridFramework.TestDataDrivenScript">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2018-06-20T18:03:20Z" finished-at="2018-06-20T18:03:20Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="testLogin" duration-ms="4" started-at="2018-06-15T15:31:25Z" data-provider="testData" finished-at="2018-06-15T15:31:25Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="testLogin" duration-ms="5" started-at="2018-06-20T18:03:20Z" data-provider="testData" finished-at="2018-06-20T18:03:20Z">
           <params>
             <param index="0">
               <value>
@@ -54,18 +54,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-06-20T18:03:20Z" finished-at="2018-06-20T18:03:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431] output={null}]]]>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="testLogin" duration-ms="2" started-at="2018-06-15T15:31:25Z" data-provider="testData" finished-at="2018-06-15T15:31:25Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-20T18:03:20Z" finished-at="2018-06-20T18:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hybridFramework.TestDataDrivenScript.testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="testLogin" duration-ms="3" started-at="2018-06-20T18:03:20Z" data-provider="testData" finished-at="2018-06-20T18:03:20Z">
           <params>
             <param index="0">
               <value>
@@ -101,40 +112,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-06-20T18:03:20Z" finished-at="2018-06-20T18:03:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.hybridFramework.TestDataDrivenScript.testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.hybridFramework.TestDataDrivenScript.testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431] output={null}]]]>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="testLogin" duration-ms="2" started-at="2018-06-15T15:31:25Z" data-provider="testData" finished-at="2018-06-15T15:31:25Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-06-20T18:03:20Z" finished-at="2018-06-20T18:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hybridFramework.TestDataDrivenScript.testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="testLogin" duration-ms="7" started-at="2018-06-20T18:03:20Z" data-provider="testData" finished-at="2018-06-20T18:03:20Z">
           <params>
             <param index="0">
               <value>
@@ -170,22 +170,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="endTest" is-config="true" duration-ms="277" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-06-15T15:31:25Z" finished-at="2018-06-15T15:31:25Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-06-20T18:03:20Z" finished-at="2018-06-20T18:03:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@1060b431] output={null}]]]>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TestDataDrivenScript.testLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.hybridFramework.TestDataDrivenScript@13eb8acf]" name="endTest" is-config="true" duration-ms="311" started-at="2018-06-20T18:03:20Z" finished-at="2018-06-20T18:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
       </class> <!-- com.hybridFramework.TestDataDrivenScript -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

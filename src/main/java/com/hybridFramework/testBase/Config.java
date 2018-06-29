@@ -7,7 +7,7 @@ public class Config extends TestBase {
 	//whereever we want the data from config.properties, we can create an object of config and call the method
 	//	config.getPassword();
 	
-	public String ge	tUserName() {
+	public String getUserName() {
 		return OR.getProperty("Username");
 	}
 	
