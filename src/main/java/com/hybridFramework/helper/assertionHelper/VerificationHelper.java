@@ -1,12 +1,13 @@
 package com.hybridFramework.helper.assertionHelper;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 
 import com.hybridFramework.helper.Logger.LoggerHelper;
 
 public class VerificationHelper {
 
-	private static final org.testng.log4testng.Logger log = LoggerHelper.getLogger(VerificationHelper.class);
+	private static final Logger log = LoggerHelper.getLogger(VerificationHelper.class);
 
 	public static synchronized boolean verifyElementPresent(WebElement element) {
 		boolean isDisplayed = false;
@@ -19,6 +20,7 @@ public class VerificationHelper {
 		return isDisplayed;
 	}
 
+	// we want the element not to be present / displayed here
 	public static synchronized boolean verifyElementNotPresent(WebElement element) {
 		boolean isDisplayed = false;
 		try {
@@ -44,9 +46,8 @@ public class VerificationHelper {
 			}
 		} catch (Exception ex) {
 			log.error("acatual text is: " + element.getText() + ". Expected text is: " + expectedText);
-			log.info("text not matching");
+			log.info("text not matching"+ ex);
+			return flag;
 		}
-		return flag;
 	}
-
 }

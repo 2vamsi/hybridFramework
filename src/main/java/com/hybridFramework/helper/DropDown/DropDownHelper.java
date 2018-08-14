@@ -3,10 +3,10 @@ package com.hybridFramework.helper.DropDown;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.log4testng.Logger;
 
 import com.hybridFramework.helper.Logger.LoggerHelper;
 
@@ -40,12 +40,20 @@ public class DropDownHelper {
 		Log.info("Locator :  "+element+ " and value:  "+ index );
 	}
 	
+	
+	public void SelectUsingVisibleText(WebElement element,String text) {
+		Select select = new Select(element);
+		select.selectByVisibleText(text);
+		Log.info("Locator : " + element + " Value : " + text);
+	}
+	
+	
 	public List<String> getAllDropDownVallues(WebElement locator) {
 		
 		Select select = new Select(locator);
 		List<WebElement> elementList = select.getOptions();
 		
-		LinkedList<String> valueList = new LinkedList<String>();
+		List<String> valueList = new LinkedList<String>();
 		
 		for (WebElement  element : elementList) {
 			Log.info(element.getText());

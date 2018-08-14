@@ -1,7 +1,6 @@
 package com.hybridFramework.helper.Alert;
 
-import java.util.logging.Logger;
-
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +10,7 @@ import com.hybridFramework.helper.Logger.LoggerHelper;
 public class AlertHelper {
 
 	private WebDriver driver;
-	private org.testng.log4testng.Logger oLog = LoggerHelper.getLogger(AlertHelper.class);
+	private Logger oLog = LoggerHelper.getLogger(AlertHelper.class);
 	
 	public AlertHelper(WebDriver driver) {
 		this.driver = driver;

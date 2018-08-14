@@ -1,13 +1,16 @@
 package com.hybridFramework.helper.genericHelper;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
 import com.hybridFramework.helper.Logger.LoggerHelper;
+
+
 public class GenericHelper {
 
 	
-private static final org.testng.log4testng.Logger log = LoggerHelper.getLogger(GenericHelper.class);
+private static final Logger log = LoggerHelper.getLogger(GenericHelper.class);
 	
 	public String readValueFromElement(WebElement element) {
 
@@ -29,11 +32,12 @@ private static final org.testng.log4testng.Logger log = LoggerHelper.getLogger(G
 			return null;
 		}
 		String text = element.getText();
-		log.info("weblement valus is.."+text);
+		log.info("weblement value is.."+text);
 		return text;
 	}
 	
-
+//above we are returning the text of the element, 
+	// below we are returning the attribute value
 	public String readValueFromInput(WebElement element) {
 		if (null == element){
 			return null;
@@ -42,10 +46,14 @@ private static final org.testng.log4testng.Logger log = LoggerHelper.getLogger(G
 			return null;
 		}
 		String value = element.getAttribute("value");
-		log.info("weblement valus is.."+value);
+		log.info("weblement Value is.."+value);
 		return value;
 	}
 	
+	
+	// we are writing a wrapper method for isDisplayed, because
+	// when the element is displayed it will return true
+	// but when not displayed it will not return false, it will throw an exception
 	public boolean isDisplayed(WebElement element) {
 		try {
 			element.isDisplayed();
@@ -58,6 +66,8 @@ private static final org.testng.log4testng.Logger log = LoggerHelper.getLogger(G
 		}
 	}
 	
+	
+	// we are expecting the element not to be displayed here ( opposite of above) 
 	protected boolean isNotDisplayed(WebElement element) {
 		try {
 			element.isDisplayed();
@@ -70,6 +80,7 @@ private static final org.testng.log4testng.Logger log = LoggerHelper.getLogger(G
 		}
 	}
 	
+	
 	protected String getDisplayText(WebElement element) {
 		if (null == element){
 			return null;
@@ -80,7 +91,7 @@ private static final org.testng.log4testng.Logger log = LoggerHelper.getLogger(G
 		return element.getText();
 	}
 	
-
+	// below is static method, so we can directly call the method  ( no need to create object) 
 	public static synchronized String getElementText( WebElement element) {
 		if (null == element) {
 			log.info("weblement is null");

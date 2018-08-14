@@ -3,12 +3,13 @@ package com.hybridFramework.helper.Browser;
 import java.util.LinkedList;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.log4testng.Logger;
+
 
 import com.hybridFramework.helper.Logger.LoggerHelper;
 
-public class BrowserHelper {
+public class BrowserHelper{
 
 	
 	private WebDriver driver; 
@@ -17,7 +18,7 @@ public class BrowserHelper {
 	
 	public BrowserHelper (WebDriver driver) {
 		this.driver = driver;
-		Log.debug("BrowserHelper :  "+ this.driver.hashCode());
+		Log.debug("BrowserHelper :  " + this.driver.hashCode());
 	}
 	
 	
@@ -51,6 +52,7 @@ public class BrowserHelper {
 	
 	public void SwitchToWindow(int index) {
 		LinkedList<String> windowsID = new LinkedList<String> (getWindowHandles());
+		
 		if(index < 0 || index> windowsID.size()) 	
 				throw new IllegalArgumentException ("Invalid Index : " + index);
 		driver.switchTo().window(windowsID.get(index));
@@ -60,7 +62,7 @@ public class BrowserHelper {
 	
 	public void switchToParentWindow() {
 		LinkedList<String> windowsID = new LinkedList<String> (getWindowHandles());
-		driver.switchTo().window(windowsID.get(0));
+		driver.switchTo().window(windowsID.get(0)); // zero - because first window will be the parent window
 		Log.info("");
 	}
 	
@@ -76,7 +78,6 @@ public class BrowserHelper {
 	}
 	
 	public void switchToFrame(String nameOrId) {
-		
 		driver.switchTo().frame(nameOrId);
 		Log.info(nameOrId);
 	}

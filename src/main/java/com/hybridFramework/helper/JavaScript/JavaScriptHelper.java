@@ -1,9 +1,10 @@
 package com.hybridFramework.helper.JavaScript;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.log4testng.Logger;
+
 
 import com.hybridFramework.helper.Logger.LoggerHelper;
 
@@ -25,8 +26,9 @@ public class JavaScriptHelper {
 	}
 	
 	
-	public Object executeScript(String script, Object...args ) {
+	public Object executeScript(String script, Object... args ) {
 		JavascriptExecutor exe = (JavascriptExecutor) driver;
+		Log.info(script);
 		return exe.executeScript(script, args);
 	}
 
@@ -59,7 +61,7 @@ public class JavaScriptHelper {
 	}
 	
 	public void scrollUpVertically() {
-		executeScript("window.scrollTo(0, - document.body.scrollHeight)");
+		executeScript("window.scrollTo(0, -document.body.scrollHeight)");
 	}
 	
 	public void scrollDownByPixel() {
@@ -74,7 +76,7 @@ public class JavaScriptHelper {
 		executeScript("document.body.style.zoom='40%'");
 	}
 	
-	public void zoomBy100Percent() {
+	public void zoomBy100Percentage() {
 		executeScript("document.body.style.zoom='100%'");
 	}
 

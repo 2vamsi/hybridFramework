@@ -13,7 +13,6 @@ public class DateTimeHelper {
 		return time;
 	}
 	
-	
 	public static String getCurrentDate() {
 		return getCurrentDateTime().substring(0, 11);
 	}

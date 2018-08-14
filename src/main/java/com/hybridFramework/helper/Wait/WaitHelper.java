@@ -2,6 +2,7 @@ package com.hybridFramework.helper.Wait;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchFrameException;
@@ -17,7 +18,7 @@ public class WaitHelper {
 
 
 	private WebDriver driver;
-	private org.testng.log4testng.Logger Log = LoggerHelper.getLogger(WaitHelper.class);
+	private Logger Log = LoggerHelper.getLogger(WaitHelper.class);
 
 	
 	public WaitHelper(WebDriver driver) {
@@ -35,8 +36,8 @@ public class WaitHelper {
 		driver.manage().timeouts().pageLoadTimeout(timeout, unit == null ? TimeUnit.SECONDS : unit);
 	}
 	
-	@SuppressWarnings("deprecation")
-	private WebDriverWait getWait(int timeOutInSeconds, int pollingEveryInMiliSec) {
+	//@SuppressWarnings("deprecation")
+	private WebDriverWait  getWait(int timeOutInSeconds, int pollingEveryInMiliSec) {
 		Log.debug("");
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		wait.pollingEvery(pollingEveryInMiliSec, TimeUnit.MILLISECONDS);
@@ -53,12 +54,15 @@ public class WaitHelper {
 		wait.until(ExpectedConditions.visibilityOf(locator));
 	}
 	
+	// below is without pooling interval
 	public void waitForElement(WebDriver driver, WebElement element, long timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		Log.info("element found..."+element.getText());
 	}
 	
+	
+	// below is to wait until the element is clickable
 	public WebElement waitForElement(WebDriver driver,long time,WebElement element){
 		WebDriverWait wait = new WebDriverWait(driver, time);
 		return wait.until(ExpectedConditions.elementToBeClickable(element));

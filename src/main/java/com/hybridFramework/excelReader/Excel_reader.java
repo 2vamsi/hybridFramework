@@ -14,15 +14,14 @@ public class Excel_reader {
 
 	public static final Logger logger  = Logger.getLogger(Excel_reader.class.getName());
 	
-	@SuppressWarnings("deprecation")
 	public String[][] getExcelData(String excelLocation, String sheetName) {
 		
 		try {
-			logger.info("creating excel object Vamsi: ");
+			logger.info("creating excel object for : - "+ excelLocation);
 		//	logger.debug("debug message");
 			String dataSets[][] = null;
 		
-		//create a file object as we want to connect to th excel sheet so that we can communicate with that
+		//create a file object as we want to connect to the excel sheet so that we can communicate with that
 		FileInputStream file = new FileInputStream(new File(excelLocation));
 		
 		//create workbook instance holding reference to .xlsx file
@@ -112,7 +111,7 @@ public class Excel_reader {
 	
 	public static void main(String[] args) {
 		String ExcelLocation = System.getProperty("user.dir")+"/src/main/java/com/hybridFramework/data/TestData.xlsx";
-		String sheetName = "LoginTestData";
+		String sheetName = "Registration";
 		Excel_reader excel = new Excel_reader();
 		excel.getExcelData(ExcelLocation, sheetName);
 		
